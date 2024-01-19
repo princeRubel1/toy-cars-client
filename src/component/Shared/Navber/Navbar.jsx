@@ -1,11 +1,13 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../../../assets/gallery/log.svg";
 import { HiMenu } from "react-icons/hi";
+import { AuthContext } from "../../../provideer/AuthProvider";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
+  const { user, logOut } = useContext(AuthContext);
 
   // toggle menubtn
   const toogleMenu = () => {
@@ -22,6 +24,10 @@ const Navbar = () => {
     };
     window.addEventListener("scroll", handleScroll);
   });
+  // user logout
+  const handleLogOut = () => {
+    logOut().then().catch();
+  };
   const navItems = (
     <>
       <li className="list-none">
@@ -33,17 +39,9 @@ const Navbar = () => {
       <li className="list-none">
         <Link
           className="block px-4 cursor-pointer hover:text-gray-400 "
-          to="/about"
+          to="/all-toys"
         >
-          About
-        </Link>
-      </li>
-      <li className="list-none">
-        <Link
-          className="block px-4 cursor-pointer hover:text-gray-400 "
-          to="/services"
-        >
-          Services
+          All Toys
         </Link>
       </li>
       <li className="list-none">
@@ -54,18 +52,58 @@ const Navbar = () => {
           Blog
         </Link>
       </li>
-      <li className="list-none">
-        <Link
-          className="block px-4 cursor-pointer hover:text-gray-400 "
-          to="/contact"
-        >
-          Contact
-        </Link>
-      </li>
+      <>
+        {user?.email ? (
+          <span className="lg:flex justify-evenly items-center">
+            <span className="">
+              <Link
+                className="block px-4 cursor-pointer hover:text-gray-400 "
+                to="/add-toy"
+              >
+                Add A Toy
+              </Link>
+            </span>
+            <span className="flex">
+              <Link
+                style={{ marginRight: "1042px" }}
+                className="block grow px-4 cursor-pointer hover:text-gray-400 "
+                to="/my-toys"
+              >
+                My Toys
+              </Link>
+            </span>
+            <img
+              title={user?.displayName}
+              className="rounded-full mx-auto lg:mt-0 sm:mt-2 md:mt-2 mr-4 flex items-center w-14 cursor-pointer"
+              src={user?.photoURL}
+            />
+            <span>
+              <button
+                onClick={handleLogOut}
+                className="px-8 py-3 bg-transparent border text-cyan-500 border-primary rounded
+                hover:bg-primary hover:text-white transition-all duration-300"
+              >
+                log Out
+              </button>
+            </span>
+          </span>
+        ) : (
+          <span className="lg:block hidden ">
+            <Link to="login">
+              <button
+                className="px-8 py-3 bg-transparent border text-cyan-500 border-primary rounded
+                hover:bg-primary hover:text-white transition-all duration-300"
+              >
+                Login
+              </button>
+            </Link>
+          </span>
+        )}
+      </>
     </>
   );
   return (
-    <header className="w-full fixed top-0 left-0 right-0 z-10">
+    <header className="max-w-full fixed top-0 left-0 right-0 z-10">
       <nav
         className={`py-4 md:px-12 px-4 bg-white ${
           isSticky ? "sticky top-0 right-0 left-0 bg-white" : ""
@@ -78,20 +116,13 @@ const Navbar = () => {
             <img src={logo} alt="" className="h-10" />
           </div>
 
-          <div className="lg:flex items-center gap-3 hidden text-body text-lg">
-            {navItems}
+          <div className="">
+            <div className="lg:flex items-center gap-3 hidden text-body text-lg ">
+              {navItems}
+            </div>
           </div>
           {/* contact me btn */}
-          <div className="lg:block hidden">
-            <Link to="login">
-              <button
-                className="px-8 py-3 bg-transparent border text-cyan-500 border-primary rounded
-                hover:bg-primary hover:text-white transition-all duration-300"
-              >
-                Login
-              </button>
-            </Link>
-          </div>
+          <div></div>
           {/* menubtn from mobile device */}
           <button onClick={toogleMenu} className="lg:hidden text-body text-3xl">
             <HiMenu />

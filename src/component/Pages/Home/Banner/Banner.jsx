@@ -7,7 +7,7 @@ import img4 from "../../../../assets/banner/ banner4.avif";
 const Banner = () => {
   return (
     <div className="mt-24">
-      <div className="carousel lg:h-[600px] sm:h-[400px] md:h-[400px]  w-full">
+      <div className="carousel lg:h-[800px] sm:h-[400px] md:h-[400px]  w-full">
         <div id="item1" className="carousel-item  relative w-full">
           <img src={img1} className="w-full rounded-xl" />
           <div className="absolute rounded-xl h-full flex items-center left-0 top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)">

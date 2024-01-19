@@ -1,13 +1,51 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
 import google from "../../../../assets/gallery/google.png";
 import { FaGithub } from "react-icons/fa";
+import { AuthContext } from "../../../../provideer/AuthProvider";
 
 const Login = () => {
+  const { signIn, googleSignIn, githubSignIn } = useContext(AuthContext);
+  const handleLogin = (event) => {
+    event.preventDefault();
+    const form = event.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    console.log(email, password);
+
+    signIn(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  // login for google
+  const handleGoogleSign = () => {
+    googleSignIn()
+      .then((result) => {
+        console.log(result);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
+  const handleGithubSign = () => {
+    githubSignIn()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div className="hero min-h-dvh bg-base-200">
       <div className="card shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-        <form className="card-body w-full">
+        <form onSubmit={handleLogin} className="card-body w-full">
           <h1 className="text-5xl text-center font-bold">Login now!</h1>
           <div className="form-control">
             <label className="label">
@@ -15,6 +53,7 @@ const Login = () => {
             </label>
             <input
               type="email"
+              name="email"
               placeholder="email"
               className="input input-bordered w-full"
               required
@@ -26,6 +65,7 @@ const Login = () => {
             </label>
             <input
               type="password"
+              name="password"
               placeholder="password"
               className="input input-bordered"
               required
@@ -41,10 +81,10 @@ const Login = () => {
           </div>
           <div className="divider">Or Sign In with</div>
           <div className="flex justify-center space-x-3 items-center">
-            <Link>
+            <Link onClick={handleGoogleSign}>
               <img className="h-8" src={google} alt="" />
             </Link>
-            <Link>
+            <Link onClick={handleGithubSign}>
               <FaGithub className="text-4xl"></FaGithub>
             </Link>
           </div>
