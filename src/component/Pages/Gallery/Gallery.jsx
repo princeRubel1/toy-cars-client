@@ -2,7 +2,7 @@ import React from "react";
 
 const Gallery = () => {
   return (
-    <div className="mt-40">
+    <div className="mt-20">
       <div className="space-y-2 mb-20">
         {" "}
         <h2 className="text-4xl font-bold text-center ">Our Gallery</h2>

@@ -23,7 +23,9 @@ const Banner = () => {
                 directions, or hearing the sounds they make.
               </p>
               <div>
-                <button className="btn btn-primary mr-5">Shop Now</button>
+                <button className="animate-pulse bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-6 transition-all duration-300 rounded">
+                  Shop Now
+                </button>
               </div>
             </div>
           </div>
@@ -43,7 +45,9 @@ const Banner = () => {
                 directions, or hearing the sounds they make.
               </p>
               <div>
-                <button className="btn btn-primary mr-5">Shop Now</button>
+                <button className="animate-pulse bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-6 transition-all duration-300 rounded">
+                  Shop Now
+                </button>
               </div>
             </div>
           </div>
@@ -63,7 +67,9 @@ const Banner = () => {
                 directions, or hearing the sounds they make.
               </p>
               <div>
-                <button className="btn btn-primary mr-5">Shop Now</button>
+                <button className="animate-pulse bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-6 transition-all duration-300 rounded">
+                  Shop Now
+                </button>
               </div>
             </div>
           </div>
@@ -83,7 +89,9 @@ const Banner = () => {
                 directions, or hearing the sounds they make.
               </p>
               <div>
-                <button className="btn btn-primary mr-5">Shop Now</button>
+                <button className="animate-pulse bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-6 transition-all duration-300 rounded">
+                  Shop Now
+                </button>
               </div>
             </div>
           </div>
