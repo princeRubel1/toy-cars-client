@@ -1,0 +1,72 @@
+[
+  {
+    "id": 1,
+    "toy_car_name": "Speedster Supreme",
+    "rating": 4.5,
+    "price": 39.99,
+    "description": "High-performance electric RC car with precision controls for ultimate speed and maneuverability."
+  },
+  {
+    "id": 2,
+    "toy_car_name": "Nitro Beast X",
+    "rating": 4.2,
+    "price": 59.99,
+    "description": "Nitro-powered off-road RC car with rugged design, perfect for thrilling off-road adventures."
+  },
+  {
+    "id": 3,
+    "toy_car_name": "Turbo Driftmaster",
+    "rating": 4.8,
+    "price": 49.99,
+    "description": "Sleek on-road RC car with advanced drift capabilities, providing excitement for racing enthusiasts."
+  },
+  {
+    "id": 4,
+    "toy_car_name": "Stunt Maverick",
+    "rating": 4.3,
+    "price": 34.99,
+    "description": "Versatile 360-degree stunt RC car capable of performing flips and spins for an exhilarating experience."
+  },
+  {
+    "id": 5,
+    "toy_car_name": "Thunderbolt Thunderstorm",
+    "rating": 4.6,
+    "price": 54.99,
+    "description": "Large-scale electric RC car with thunderous speed, suitable for both indoor and outdoor racing."
+  },
+  {
+    "id": 6,
+    "toy_car_name": "Off-Road Dominator Pro",
+    "rating": 4.4,
+    "price": 44.99,
+    "description": "Rugged off-road RC car with powerful 4-wheel drive, conquering rough terrains with ease."
+  },
+  {
+    "id": 7,
+    "toy_car_name": "Stealth Sprinter GT",
+    "rating": 4.7,
+    "price": 36.99,
+    "description": "Sleek and compact on-road RC car known for its speed, agility, and stylish design."
+  },
+  {
+    "id": 8,
+    "toy_car_name": "Nitrocharged Thunder",
+    "rating": 4.1,
+    "price": 69.99,
+    "description": "High-performance nitro RC car with lightning-fast acceleration, delivering an adrenaline-pumping experience."
+  },
+  {
+    "id": 9,
+    "toy_car_name": "Tornado Titan Pro",
+    "rating": 4.9,
+    "price": 79.99,
+    "description": "Extreme off-road RC car with advanced features, conquering any terrain with its tornado-like agility."
+  },
+  {
+    "id": 10,
+    "toy_car_name": "Turbocharged Lightning",
+    "rating": 4.5,
+    "price": 42.99,
+    "description": "Turbocharged electric RC car designed for speed enthusiasts, delivering thrilling races and maneuvers."
+  }
+]

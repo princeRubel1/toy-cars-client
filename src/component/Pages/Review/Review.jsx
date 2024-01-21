@@ -3,7 +3,7 @@ import Marquee from "react-fast-marquee";
 
 const Review = () => {
   return (
-    <div className="mt-20">
+    <div className="mt-20 mb-20">
       <div className="text-center">
         <h2 className="text-5xl font-bold  ">Clients Reviews</h2>
       </div>
