@@ -27,7 +27,7 @@ const ContactUs = () => {
                 <input
                   type="text"
                   placeholder=" Full Name"
-                  className="input input-bordered pr-96"
+                  className="input input-bordered pr-96 bg-white"
                   required
                 />
               </div>
@@ -38,7 +38,7 @@ const ContactUs = () => {
                 <input
                   type="email"
                   placeholder="email"
-                  className="input input-bordered pr-96"
+                  className="input input-bordered pr-96 bg-white"
                   required
                 />
               </div>
@@ -47,7 +47,7 @@ const ContactUs = () => {
                   <span className="label-text text-2xl">Message</span>
                 </label>
                 <textarea
-                  className="border"
+                  className="border bg-white"
                   name=""
                   id=""
                   cols="30"
@@ -55,7 +55,7 @@ const ContactUs = () => {
                 ></textarea>
               </div>
               <div className="form-control mt-6">
-                <button className="btn btn-primary text-white">
+                <button className="btn btn-primary bg-white">
                   Send Message
                 </button>
               </div>

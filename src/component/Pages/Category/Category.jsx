@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Category = () => {
   return (
@@ -28,9 +29,11 @@ const Category = () => {
                 These toys come in various forms, including cars, helicopters,
                 boats, and more.
               </p>
-              <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-6 transition-all duration-300 rounded">
-                More Product
-              </button>
+              <Link to="/remote-control">
+                <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-6 transition-all duration-300 rounded">
+                  More Product
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -51,15 +54,17 @@ const Category = () => {
               alt=""
             />
             <div className="w-2/3 mx-auto space-y-2">
-              <p className=" text-gray-500">
+              <p className=" text-gray-500 mb-4">
                 An educational remote control toy combines the enjoyment of play
                 with the benefits of learning. <br /> These toys are designed to
                 engage children in educational activities while incorporating
                 remote control features.
               </p>
-              <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-6 transition-all duration-300 rounded">
-                More Product
-              </button>
+              <Link to="/educational-car">
+                <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-6 transition-all duration-300 rounded">
+                  More Product
+                </button>
+              </Link>
             </div>
           </div>
         </div>
@@ -80,16 +85,18 @@ const Category = () => {
               alt=""
             />
             <div className="w-2/3 mx-auto space-y-2">
-              <p className=" text-gray-500">
+              <p className=" text-gray-500 mb-4">
                 A model toy car is a scaled-down replica of a real-world
                 automobile, often crafted with meticulous attention to detail.{" "}
                 <br />
                 These models can be made from various materials such as plastic,
                 diecast metal, or wood
               </p>
-              <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-6 transition-all duration-300 rounded">
-                More Product
-              </button>
+              <Link to="/model-car">
+                <button className=" bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-6 transition-all duration-300 rounded">
+                  More Products
+                </button>
+              </Link>
             </div>
           </div>
         </div>

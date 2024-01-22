@@ -3,7 +3,7 @@ import { GoArrowRight } from "react-icons/go";
 import { LiaEqualsSolid } from "react-icons/lia";
 const Blog = () => {
   return (
-    <div className="mt-24 bg-white w-full mx-auto shadow-[0_20px_50px_rgba(8,_112,_184,_0.7)] p-8">
+    <div className="mt-24 bg-white w-full mx-auto  p-8">
       <h2 className="text-5xl font-bold text-center my-10">Blog</h2>
       <div className=" ml-20 mb-10">
         <div className="space-y-3">

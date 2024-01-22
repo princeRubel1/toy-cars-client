@@ -8,8 +8,11 @@ const Review = () => {
         <h2 className="text-5xl font-bold  ">Clients Reviews</h2>
       </div>
       <Marquee className="mt-20">
-        <div className="flex gap-10 ">
-          <div className=" w-[450px]  bg-base-100 shadow-2xl">
+        <div className="flex gap-10  ">
+          <div
+            style={{ backgroundColor: "#1D232A" }}
+            className=" w-[450px] rounded-lg  shadow-2xl"
+          >
             <figure className="w-1/3 mx-auto">
               <img
                 className="h-40 w-40 rounded-full mt-5"
@@ -18,7 +21,9 @@ const Review = () => {
               />
             </figure>
             <div className="text-center mt-4">
-              <h2 className="text-2xl font-bold">James Anderson</h2>
+              <h2 className="text-2xl text-gray-200 font-bold">
+                James Anderson
+              </h2>
             </div>
             <div className="card-body">
               <p className="text-gray-500 h-1/2">
@@ -35,7 +40,10 @@ const Review = () => {
               </span>
             </div>
           </div>
-          <div className=" w-[450px]  bg-base-100 shadow-2xl">
+          <div
+            style={{ backgroundColor: "#1D232A" }}
+            className=" w-[450px] rounded-lg shadow-2xl"
+          >
             <figure className="w-1/3 mx-auto">
               <img
                 className="h-40 w-40 rounded-full mt-5"
@@ -44,7 +52,7 @@ const Review = () => {
               />
             </figure>
             <div className="text-center mt-4">
-              <h2 className="text-2xl font-bold">John Roberts</h2>
+              <h2 className="text-2xl text-gray-200 font-bold">John Roberts</h2>
             </div>
             <div className="card-body">
               <p className="text-gray-500 h-1/2">
@@ -61,7 +69,10 @@ const Review = () => {
               </span>
             </div>
           </div>
-          <div className=" w-[450px]  bg-base-100 shadow-2xl">
+          <div
+            style={{ backgroundColor: "#1D232A" }}
+            className=" w-[450px] rounded-lg  shadow-2xl"
+          >
             <figure className="w-1/3 mx-auto">
               <img
                 className="h-40 w-40 rounded-full mt-5 "
@@ -70,7 +81,9 @@ const Review = () => {
               />
             </figure>
             <div className="text-center mt-4">
-              <h2 className="text-2xl font-bold">Robert Mitchell</h2>
+              <h2 className="text-2xl text-gray-200 font-bold">
+                Robert Mitchell
+              </h2>
             </div>
             <div className="card-body">
               <p className="text-gray-500 h-1/2">
@@ -86,7 +99,10 @@ const Review = () => {
               </span>
             </div>
           </div>
-          <div className=" w-[450px] bg-base-100 shadow-2xl mr-10">
+          <div
+            style={{ backgroundColor: "#1D232A" }}
+            className=" w-[450px] rounded-lg  shadow-2xl mr-10"
+          >
             <figure className="w-1/3 mx-auto">
               <img
                 className="h-40 w-40 rounded-full mt-5 "
@@ -95,7 +111,7 @@ const Review = () => {
               />
             </figure>
             <div className="text-center mt-4">
-              <h2 className="text-2xl font-bold">Ava Thompson</h2>
+              <h2 className="text-2xl text-gray-200 font-bold">Ava Thompson</h2>
             </div>
             <div className="card-body">
               <p className="text-gray-500 h-1/2">

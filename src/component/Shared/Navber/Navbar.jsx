@@ -80,10 +80,10 @@ const Navbar = () => {
             <span>
               <button
                 onClick={handleLogOut}
-                className="px-8 py-3 bg-transparent border text-cyan-500 border-primary rounded
+                className="px-8 py-3 bg-transparent border text-slate-300 border-primary rounded
                 hover:bg-primary hover:text-white transition-all duration-300"
               >
-                log Out
+                Log Out
               </button>
             </span>
           </span>
@@ -105,7 +105,8 @@ const Navbar = () => {
   return (
     <header className="max-w-full fixed top-0 left-0 right-0 z-10">
       <nav
-        className={`py-4 md:px-12 px-4 bg-white ${
+        style={{ backgroundColor: "#191E23" }}
+        className={`py-4 md:px-12 px-4  ${
           isSticky ? "sticky top-0 right-0 left-0 bg-white" : ""
         }`}
       >
@@ -117,7 +118,7 @@ const Navbar = () => {
           </div>
 
           <div className="">
-            <div className="lg:flex items-center gap-3 hidden text-body text-lg ">
+            <div className="lg:flex items-center gap-3 hidden text-slate-300 text-lg ">
               {navItems}
             </div>
           </div>
