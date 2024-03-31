@@ -6,12 +6,12 @@ import img4 from "../../../../assets/banner/ banner4.avif";
 
 const Banner = () => {
   return (
-    <div className="mt-24">
+    <div className="mt-16">
       <div className="carousel lg:h-[900px] sm:h-[400px] md:h-[400px]  w-full">
         <div id="item1" className="carousel-item  relative w-full">
           <img src={img1} className="w-full" />
-          <div className="absolute h-full flex items-center left-0 top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)">
-            <div className="text-white lg:space-y-7 md:space-y-4 sm:space-y-2 lg:w-1/2 sm:w-1/3 lg:ml-30 sm:ml-20">
+          <div className="absolute h-full  flex items-center left-0 top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)">
+            <div className="text-white  lg:space-y-7 md:space-y-4 sm:space-y-2 lg:w-1/2 sm:w-1/3 lg:ml-48 sm:ml-20">
               <h2 className="lg:text-6xl sm:text-xl md:text-2xl font-bold space-y-2">
                 Buy 3 get <br />
                 <span className="text-red-400"> 50% </span> discount
@@ -33,7 +33,7 @@ const Banner = () => {
         <div id="item1" className="carousel-item  relative w-full">
           <img src={img2} className="w-full" />
           <div className="absolute h-full flex items-center left-0 top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)">
-            <div className="text-white lg:space-y-7 md:space-y-4 sm:space-y-2 lg:w-1/2 sm:w-1/3 lg:ml-30 sm:ml-20">
+            <div className="text-white lg:space-y-7 md:space-y-4 sm:space-y-2 lg:w-1/2 sm:w-1/3 lg:ml-48 sm:ml-20">
               <h2 className="lg:text-6xl sm:text-xl md:text-2xl font-bold space-y-2">
                 Buy 3 get <br />
                 <span className="text-red-400"> 50% </span> discount
@@ -55,7 +55,7 @@ const Banner = () => {
         <div id="item1" className="carousel-item  relative w-full">
           <img src={img3} className="w-full" />
           <div className="absolute h-full flex items-center left-0 top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)">
-            <div className="text-white lg:space-y-7 md:space-y-4 sm:space-y-2 lg:w-1/2 sm:w-1/3 lg:ml-30 sm:ml-20">
+            <div className="text-white lg:space-y-7 md:space-y-4 sm:space-y-2 lg:w-1/2 sm:w-1/3 lg:ml-48 sm:ml-20">
               <h2 className="lg:text-6xl sm:text-xl md:text-2xl font-bold space-y-2">
                 Buy 3 get <br />
                 <span className="text-red-400"> 50% </span> discount
@@ -77,7 +77,7 @@ const Banner = () => {
         <div id="item1" className="carousel-item  relative w-full">
           <img src={img4} className="w-full " />
           <div className="absolute  h-full flex items-center left-0 top-0  bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0.00)">
-            <div className="text-white lg:space-y-7 md:space-y-4 sm:space-y-2 lg:w-1/2 sm:w-1/3 lg:ml-30 sm:ml-20">
+            <div className="text-white lg:space-y-7 md:space-y-4 sm:space-y-2 lg:w-1/2 sm:w-1/3 lg:ml-48 sm:ml-20">
               <h2 className="lg:text-6xl sm:text-xl md:text-2xl font-bold space-y-2">
                 Buy 3 get <br />
                 <span className="text-red-400"> 50% </span> discount

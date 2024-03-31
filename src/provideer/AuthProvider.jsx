@@ -16,10 +16,10 @@ const auth = getAuth(app);
 const AuthProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [loading, setLoading] = useState(null);
-  // for google
+
   const googleProvider = new GoogleAuthProvider();
-  // for github
   const githubProvider = new GithubAuthProvider();
+
   // register for user
   const createUser = (email, password) => {
     setLoading(true);

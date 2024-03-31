@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import hurry from "../../../assets/banner/harry.webp";
 
-const COUNTDOWN_TARGET = new Date("2024-01-31T23:59:59");
+const COUNTDOWN_TARGET = new Date("2024-09-31T23:59:59");
 
 const getTimeLeft = () => {
   const totalTimeLeft = COUNTDOWN_TARGET - new Date();
@@ -23,10 +23,10 @@ const HarryUp = () => {
     };
   }, []);
   return (
-    <div className="mt-20 flex justify-evenly items-center">
+    <div className="mt-40 mb-40 max-w-screen-2xl mx-auto flex justify-evenly items-center">
       <div>
         <img
-          className="h-80"
+          className="h-60"
           src="https://img.freepik.com/free-vector/convertible-car-cartoon-sticker-white-background_1308-76460.jpg?size=626&ext=jpg&ga=GA1.1.1983607497.1702311342&semt=ais"
           alt=""
         />
@@ -44,31 +44,31 @@ const HarryUp = () => {
           </p>
         </div>
         <div className="flex items-center justify-center gap-5 text-center">
-          <div className=" bg-white p-8 shadow-2xl space-y-3 rounded-lg">
+          <div className=" bg-white p-6 shadow-2xl space-y-3 rounded-lg">
             <span className="text-6xl">{timeLeft.days}</span>
             <h4 className="text-4xl">Days</h4>
           </div>
-          <div className=" bg-white p-8 shadow-2xl space-y-3 rounded-lg">
+          <div className=" bg-white p-6 shadow-2xl space-y-3 rounded-lg">
             <span className="text-6xl">{timeLeft.hours}</span>
             <h4 className="text-4xl">Hours</h4>
           </div>
-          <div className=" bg-white p-8 shadow-2xl space-y-3 rounded-lg">
+          <div className=" bg-white p-6 shadow-2xl space-y-3 rounded-lg">
             <span className="text-6xl">{timeLeft.minutes}</span>
             <h4 className="text-4xl">Minutes</h4>
           </div>
-          <div className=" bg-white p-8 shadow-2xl space-y-3 rounded-lg">
+          <div className=" bg-white p-6 shadow-2xl space-y-3 rounded-lg">
             <span className="text-6xl">{timeLeft.seconds}</span>
             <h4 className="text-4xl">Seconds</h4>
           </div>
         </div>
         <div className="text-center">
-          <button className="animate-pulse bg-blue-500 hover:bg-blue-700 text-white font-bold py-5 px-6 transition-all duration-300 rounded">
+          <button className="animate-pulse bg-blue-500 hover:bg-blue-700 text-white font-bold py-3 px-8 transition-all duration-300 rounded">
             Shop Now
           </button>
         </div>
       </div>
       <div>
-        <img src={hurry} alt="" />
+        <img src={hurry} className="h-80" alt="" />
       </div>
     </div>
   );

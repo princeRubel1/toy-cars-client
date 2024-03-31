@@ -5,7 +5,7 @@ import { RiMoneyDollarCircleLine, RiSecurePaymentLine } from "react-icons/ri";
 
 const Information = () => {
   return (
-    <div className="mt-20 mx-auto w-10/12 grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5">
+    <div className="mt-20 mx-auto max-w-screen-2xl grid lg:grid-cols-4 md:grid-cols-2 sm:grid-cols-1 gap-5">
       <div className="space-y-3 bg-white p-10 rounded-md shadow-lg">
         <p>
           <LiaShippingFastSolid className="text-7xl"></LiaShippingFastSolid>

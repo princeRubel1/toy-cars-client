@@ -7,7 +7,6 @@ import { AuthContext } from "../../../provideer/AuthProvider";
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isSticky, setIsSticky] = useState(false);
-  const { user, logOut } = useContext(AuthContext);
 
   // toggle menubtn
   const toogleMenu = () => {
@@ -29,7 +28,7 @@ const Navbar = () => {
     logOut().then().catch();
   };
   const navItems = (
-    <>
+    <div className="flex justify-evenly">
       <li className="list-none">
         <Link className="block px-4 cursor-pointer hover:text-gray-400 " to="/">
           Home
@@ -88,7 +87,7 @@ const Navbar = () => {
             </span>
           </span>
         ) : (
-          <span className="lg:block hidden ">
+          <span className="flex justify-end  ">
             <Link to="login">
               <button
                 className="px-8 py-3 bg-transparent border text-cyan-500 border-primary rounded
@@ -100,7 +99,7 @@ const Navbar = () => {
           </span>
         )}
       </>
-    </>
+    </div>
   );
   return (
     <header className="max-w-full fixed top-0 left-0 right-0 z-10">
@@ -111,13 +110,13 @@ const Navbar = () => {
         }`}
       >
         {/* for large devices */}
-        <div className="flex items-center justify-between ">
+        <div className=" max-w-screen-2xl mx-auto flex items-center justify-between ">
           <div className="cursor-pointer">
             {/* for logo */}
             <img src={logo} alt="" className="h-10" />
           </div>
 
-          <div className="">
+          <div className="flex justify-evenly">
             <div className="lg:flex items-center gap-3 hidden text-slate-300 text-lg ">
               {navItems}
             </div>

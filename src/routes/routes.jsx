@@ -4,9 +4,10 @@ import Home from "../component/Pages/Home/Home/Home";
 import Login from "../component/Pages/Authentication/Login/Login";
 import Register from "../component/Pages/Authentication/Register/Register";
 import Blog from "../component/Pages/Blog/Blog";
-import RemoteControl from "../component/Pages/RemoteControl/RemoteControl";
-import EducationalCars from "../component/Pages/EducationalCars/EducationalCars";
-import ModelCars from "../component/Pages/ModelCars/ModelCars";
+
+import AllToys from "../component/Pages/Category/AllToys/AllToys";
+import DetailsPage from "../component/Pages/Category/DetialsPage/DetailsPage";
+import AddToy from "../component/Pages/AddToy/AddToy";
 
 const router = createBrowserRouter([
   {
@@ -30,16 +31,20 @@ const router = createBrowserRouter([
         element: <Blog></Blog>,
       },
       {
-        path: "/remote-control",
-        element: <RemoteControl></RemoteControl>,
+        path: "/all-toys",
+        element: <AllToys></AllToys>,
       },
       {
-        path: "/educational-car",
-        element: <EducationalCars></EducationalCars>,
+        path: "details-page/:id",
+        element: <DetailsPage></DetailsPage>,
+        loader: ({ params }) => {
+          // console.log(params);
+          return fetch(`http://localhost:4000/allToys/${params.id}`);
+        },
       },
       {
-        path: "/model-car",
-        element: <ModelCars></ModelCars>,
+        path: "/add-toy",
+        element: <AddToy></AddToy>,
       },
     ],
   },

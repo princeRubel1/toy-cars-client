@@ -3,7 +3,7 @@ import contact from "../../../assets/gallery/best-contact-us-pages-2.png";
 
 const ContactUs = () => {
   return (
-    <div>
+    <div className="">
       <div className="text-center space-y-3">
         <h2 className="text-5xl font-bold">Contact Us</h2>
         <p className="text-gray-500">
@@ -13,7 +13,7 @@ const ContactUs = () => {
           us.
         </p>
       </div>
-      <div className="flex p-10 gap-10 w-full justify-center items-center">
+      <div className="flex p-10 gap-10 max-w-screen-2xl mx-auto justify-between items-center">
         <div className="">
           <img src={contact} className="h-96" alt="" />
         </div>
