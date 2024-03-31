@@ -39,7 +39,9 @@ const router = createBrowserRouter([
         element: <DetailsPage></DetailsPage>,
         loader: ({ params }) => {
           // console.log(params);
-          return fetch(`http://localhost:4000/allToys/${params.id}`);
+          return fetch(
+            `https://toy-cars-server-navy.vercel.app/allToys/${params.id}`
+          );
         },
       },
       {

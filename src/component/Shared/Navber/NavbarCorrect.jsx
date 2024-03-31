@@ -67,12 +67,20 @@ const NavbarCorrect = () => {
             <Link to="/all-toys">
               <a>All Toys</a>
             </Link>
-            <Link to="my-toy">
-              <a>My Toys</a>
-            </Link>
-            <Link to="/add-toy">
-              <a>Add A Toy</a>
-            </Link>
+            <>
+              {user?.email ? (
+                <>
+                  <Link to="my-toy">
+                    <a>My Toys</a>
+                  </Link>
+                  <Link to="/add-toy">
+                    <a>Add A Toy</a>
+                  </Link>
+                </>
+              ) : (
+                ""
+              )}
+            </>
             <Link to="/blog">
               <a>Blog</a>
             </Link>

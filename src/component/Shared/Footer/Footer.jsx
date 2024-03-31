@@ -1,15 +1,12 @@
 import React from "react";
-import logo from "../../../assets/gallery/log.svg";
+import logo from "../../../assets/gallery/logo.png";
 
 const Footer = () => {
   return (
-    <div className="mt-24">
-      <footer
-        style={{ backgroundColor: "#191E23" }}
-        className="footer p-10 text-base-content"
-      >
+    <div className="mt-24" style={{ backgroundColor: "#191E23" }}>
+      <footer className="footer p-10 text-base-content max-w-screen-2xl mx-auto">
         <aside>
-          <img className="w-32" src={logo} alt="" />
+          <img className="w-20" src={logo} alt="" />
           <p className="text-gray-400">
             Car Industries Ltd.
             <br />

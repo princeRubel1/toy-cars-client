@@ -4,7 +4,7 @@ const useToys = () => {
   const [toys, setToys] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:4000/allToys")
+    fetch("https://toy-cars-server-navy.vercel.app/allToys")
       .then((res) => res.json())
       .then((data) => setToys(data));
   }, []);
